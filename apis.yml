@@ -1,8 +1,25 @@
 aid: clarity-money
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/clarity-money.png
 name: Clarity Money
-description: 'Clarity Money is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Clarity Money was a personal-finance and money-management mobile app founded in 2016
+  by Adam Dell (Oath Holdings / Dell family) that used data-driven analysis to help consumers track
+  spending, cancel unwanted subscriptions, negotiate bills, move savings, and manage budgets. It was
+  acquired by Goldman Sachs in 2018 and folded into the Marcus by Goldman Sachs consumer platform; the
+  standalone Clarity Money app was subsequently discontinued. The company was surfaced as a portfolio
+  company of Bessemer Venture Partners and added to the API Evangelist network as an enrichment lead.
+  No public developer program, API, documentation, or developer portal was ever published, and the
+  claritymoney.com domain no longer resolves to a live site (held by Goldman Sachs registrar CSC).'
 url: https://raw.githubusercontent.com/api-evangelist/clarity-money/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,20 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-reason: acquired-by-goldman-sachs-2018-folded-into-marcus-app-discontinued
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Fintech
+- Personal Finance
+- Financial Management
+- Budgeting
+- Consumer Banking
+- Acquired
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,8 @@ maintainers:
 common:
 - type: Website
   url: https://claritymoney.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
